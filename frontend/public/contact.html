@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Ledger & Co.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pages/variables.css">
+  <link rel="stylesheet" href="css/pages/base.css">
+  <link rel="stylesheet" href="css/pages/components.css">
+  <link rel="stylesheet" href="css/pages/checkout.css">
+  <link rel="stylesheet" href="css/pages/content.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark" aria-hidden="true">L</span>
+        Ledger&nbsp;&amp;&nbsp;Co.
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="content-hero">
+        <span class="eyebrow">Support</span>
+        <h1 style="margin-top: var(--space-3);">We usually reply within a few hours.</h1>
+      </div>
+
+      <div class="contact-layout">
+        <div>
+          <form data-contact-form novalidate>
+            <div class="form-grid">
+              <div class="field span-2">
+                <label for="cName">Name</label>
+                <input id="cName" name="name" required>
+                <span class="field-error">Enter your name</span>
+              </div>
+              <div class="field span-2">
+                <label for="cEmail">Email</label>
+                <input id="cEmail" name="email" type="email" required>
+                <span class="field-error">Enter a valid email</span>
+              </div>
+              <div class="field span-2">
+                <label for="cOrder">Order number (optional)</label>
+                <input id="cOrder" name="order" placeholder="LC-48213092">
+              </div>
+              <div class="field span-2">
+                <label for="cMessage">Message</label>
+                <textarea id="cMessage" name="message" rows="5" required style="width: 100%; padding: var(--space-3); border: 1px solid var(--color-line-strong); border-radius: var(--radius-md); background: var(--color-paper); font: inherit;"></textarea>
+                <span class="field-error">Tell us what's going on</span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top: var(--space-5);">Send message</button>
+          </form>
+
+          <div data-contact-success style="display: none;">
+            <div class="order-hero__icon" style="margin-inline: 0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <h2 style="font-size: var(--text-xl); margin-top: var(--space-4);">Message sent</h2>
+            <p style="color: var(--color-ink-soft); margin-top: var(--space-2);">We'll get back to you by email shortly.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>support@ledgerandco.example</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (555) 010-0192 — Mon–Fri, 9am–6pm</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">💬</div>
+            <div>
+              <h4>Live chat</h4>
+              <p>Available on this page during business hours</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">❓</div>
+            <div>
+              <h4>Common questions</h4>
+              <p><a href="faq.html" style="color: var(--color-accent); font-weight: 600;">Check the FAQ →</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding-top: 0;">
+        <span>© 2026 Ledger &amp; Co. All rights reserved.</span>
+        <span>Built for any business, by design.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/utils/theme.js"></script>
+  <script src="js/pages/contact.js"></script>
+</body>
+</html>
